@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>HR Nations</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">HR Nations</a>
+        <button
+          class="navbar-toggler bg-light"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item px-2">
+              <a href="jobs.html" class="nav-link">Vacancies</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="events.html" class="nav-link">Events</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="blogs.html" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="contacts.html" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                ><i class="fas fa-user"></i
+              ></a>
+              <div class="dropdown-menu">
+                <a href="profile.html" class="dropdown-item">Dashboard</a>
+                <a href="resume.html" class="dropdown-item">Resume</a>
+                <a href="applications.html" class="dropdown-item"
+                  >Applications</a
+                >
+                <a href="login.html" class="dropdown-item">Logout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- FRAME -->
+    <div class="container">
+      <!-- APPLICANTS HEADER -->
+      <div class="row">
+        <div class="col text-center">
+          <h1>APPLICANTS</h1>
+          <h2>Apple Inc</h2>
+          <p class="lead">Senior Software Developer</p>
+          <p>1 Infinity Loop, Palo Alto, CA, USA</p>
+          <p class="text-muted"><i>Posted on 12 February, 2019</i></p>
+        </div>
+      </div>
+      <!-- INDIVIDUAL APPLICANT -->
+      <div class="row">
+        <div class="col">
+          <!-- SMALL TABLE -->
+          <table class="table table-sm table-hover">
+            <thead>
+              <tr>
+                <th class="d-none d-lg-table-cell">Gender</th>
+                <th>Name</th>
+                <th>Title</th>
+                <th>Age</th>
+                <th class="d-none d-lg-table-cell">Address</th>
+                <th class="d-none d-lg-table-cell">Date</th>
+                <th>Experience</th>
+                <th class="d-none d-lg-table-cell">Resume</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="d-none d-lg-table-cell">Male</td>
+                <td>Kamran Elchuzade</td>
+                <td>Junior Web Developer</td>
+                <td>25</td>
+                <td class="d-none d-lg-table-cell">Maslak, Istanbul, Turkey</td>
+                <td class="d-none d-lg-table-cell">12 March, 2019</td>
+                <td>7 years</td>
+                <td class="d-none d-lg-table-cell">HRNations</td>
+                <td>
+                  <form>
+                    <div class="input-group input-group-sm">
+                      <select name="status" id="status" class="custom-select">
+                        <option value="0">Applicant</option>
+                        <option value="1" selected>Longlist</option>
+                        <option value="2">Shortlist</option>
+                        <option value="3">Interview</option>
+                      </select>
+                      <div class="input-group-append">
+                        <button class="btn btn-sm btn-info">update</button>
+                      </div>
+                    </div>
+                  </form>
+                </td>
+              </tr>
+              <tr>
+                <td class="d-none d-lg-table-cell">Female</td>
+                <td>Jane Smith</td>
+                <td>Junior Web Developer</td>
+                <td>32</td>
+                <td class="d-none d-lg-table-cell">Bail, Baku, Azerbaijan</td>
+                <td class="d-none d-lg-table-cell">23 February, 2019</td>
+                <td>10 years</td>
+                <td class="d-none d-lg-table-cell">Upload</td>
+                <td>
+                  <form>
+                    <div class="input-group input-group-sm">
+                      <select name="status" id="status" class="custom-select">
+                        <option value="0">Applicant</option>
+                        <option value="1">Longlist</option>
+                        <option value="2" selected>Shortlist</option>
+                        <option value="3">Interview</option>
+                      </select>
+                      <div class="input-group-append">
+                        <button class="btn btn-sm btn-info">update</button>
+                      </div>
+                    </div>
+                  </form>
+                </td>
+              </tr>
+              <tr>
+                <td class="d-none d-lg-table-cell">Male</td>
+                <td>John Doe</td>
+                <td>Junior Web Developer</td>
+                <td>20</td>
+                <td class="d-none d-lg-table-cell">
+                  Besiktas, Istanbul, Turkey
+                </td>
+                <td class="d-none d-lg-table-cell">21 March, 2019</td>
+                <td>3 years</td>
+                <td class="d-none d-lg-table-cell">Linkedin</td>
+                <td>
+                  <form>
+                    <div class="input-group input-group-sm">
+                      <select name="status" id="status" class="custom-select">
+                        <option value="0" selected>Applicant</option>
+                        <option value="1">Longlist</option>
+                        <option value="2">Shortlist</option>
+                        <option value="3">Interview</option>
+                      </select>
+                      <div class="input-group-append">
+                        <button class="btn btn-sm btn-info">update</button>
+                      </div>
+                    </div>
+                  </form>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
