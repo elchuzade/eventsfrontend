@@ -68,45 +68,49 @@
     <!-- FRAME -->
     <div class="container">
       <!-- JOBS HEADER -->
-      <div class="row">
-        <div class="col">
-          <h1 class="text-center">
-            VACANCIES
-            <a
-              href="#"
-              class="btn btn-info ml-5"
-              data-toggle="modal"
-              data-target="#addJobModal"
-            >
-              <i class="fas fa-plus fa-2x"></i>
-            </a>
-          </h1>
+      <section id="jobsHeader">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-center">
+              VACANCIES
+              <a
+                href="#"
+                class="btn btn-info ml-5"
+                data-toggle="modal"
+                data-target="#addJobModal"
+              >
+                <i class="fas fa-plus fa-2x"></i>
+              </a>
+            </h1>
+          </div>
         </div>
-      </div>
+      </section>
       <!-- INDIVIDUAL JOB -->
-      <div class="row">
-        <div class="d-none d-md-block col-3">
-          <a href="job.html">
-            <img
-              class="img-fluid"
-              src="http://picsum.photos/200/200"
-              alt="avatar"
-            />
-          </a>
+      <section id="jobs">
+        <div class="row">
+          <div class="d-none d-md-block col-3">
+            <a href="job.html">
+              <img
+                class="img-fluid"
+                src="http://picsum.photos/200/200"
+                alt="avatar"
+              />
+            </a>
+          </div>
+          <div class="col-md-9 col-12">
+            <a href="job.html">
+              <h3>Job Title</h3>
+            </a>
+            <p><i>Daimler AG</i></p>
+            <p>Hamburg, Germany</p>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Blanditiis in inventore at quod dignissimos, numquam quibusdam
+              fugit molestiae praesentium expedita?
+            </p>
+          </div>
         </div>
-        <div class="col-md-9 col-12">
-          <a href="job.html">
-            <h3>Job Title</h3>
-          </a>
-          <p><i>Daimler AG</i></p>
-          <p>Hamburg, Germany</p>
-          <p class="lead">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
-            in inventore at quod dignissimos, numquam quibusdam fugit molestiae
-            praesentium expedita?
-          </p>
-        </div>
-      </div>
+      </section>
     </div>
 
     <!-- JOB MODAL -->

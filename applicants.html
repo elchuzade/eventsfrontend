@@ -66,118 +66,124 @@
       </div>
     </nav>
     <!-- FRAME -->
-    <div class="container">
-      <!-- APPLICANTS HEADER -->
-      <div class="row">
-        <div class="col text-center">
-          <h1>APPLICANTS</h1>
-          <h2>Apple Inc</h2>
-          <p class="lead">Senior Software Developer</p>
-          <p>1 Infinity Loop, Palo Alto, CA, USA</p>
-          <p class="text-muted"><i>Posted on 12 February, 2019</i></p>
+    <section id="applicantsHeader">
+      <div class="container">
+        <!-- APPLICANTS HEADER -->
+        <div class="row">
+          <div class="col text-center">
+            <h1>APPLICANTS</h1>
+            <h2>Apple Inc</h2>
+            <p class="lead">Senior Software Developer</p>
+            <p>1 Infinity Loop, Palo Alto, CA, USA</p>
+            <p class="text-muted"><i>Posted on 12 February, 2019</i></p>
+          </div>
+        </div>
+      </section>
+      <section id="applicants">
+        <!-- INDIVIDUAL APPLICANT -->
+        <div class="row">
+          <div class="col">
+            <!-- SMALL TABLE -->
+            <table class="table table-sm table-hover">
+              <thead>
+                <tr>
+                  <th class="d-none d-lg-table-cell">Gender</th>
+                  <th>Name</th>
+                  <th>Title</th>
+                  <th>Age</th>
+                  <th class="d-none d-lg-table-cell">Address</th>
+                  <th class="d-none d-lg-table-cell">Date</th>
+                  <th>Experience</th>
+                  <th class="d-none d-lg-table-cell">Resume</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="d-none d-lg-table-cell">Male</td>
+                  <td>Kamran Elchuzade</td>
+                  <td>Junior Web Developer</td>
+                  <td>25</td>
+                  <td class="d-none d-lg-table-cell">
+                    Maslak, Istanbul, Turkey
+                  </td>
+                  <td class="d-none d-lg-table-cell">12 March, 2019</td>
+                  <td>7 years</td>
+                  <td class="d-none d-lg-table-cell">HRNations</td>
+                  <td>
+                    <form>
+                      <div class="input-group input-group-sm">
+                        <select name="status" id="status" class="custom-select">
+                          <option value="0">Applicant</option>
+                          <option value="1" selected>Longlist</option>
+                          <option value="2">Shortlist</option>
+                          <option value="3">Interview</option>
+                        </select>
+                        <div class="input-group-append">
+                          <button class="btn btn-sm btn-info">update</button>
+                        </div>
+                      </div>
+                    </form>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="d-none d-lg-table-cell">Female</td>
+                  <td>Jane Smith</td>
+                  <td>Junior Web Developer</td>
+                  <td>32</td>
+                  <td class="d-none d-lg-table-cell">Bail, Baku, Azerbaijan</td>
+                  <td class="d-none d-lg-table-cell">23 February, 2019</td>
+                  <td>10 years</td>
+                  <td class="d-none d-lg-table-cell">Upload</td>
+                  <td>
+                    <form>
+                      <div class="input-group input-group-sm">
+                        <select name="status" id="status" class="custom-select">
+                          <option value="0">Applicant</option>
+                          <option value="1">Longlist</option>
+                          <option value="2" selected>Shortlist</option>
+                          <option value="3">Interview</option>
+                        </select>
+                        <div class="input-group-append">
+                          <button class="btn btn-sm btn-info">update</button>
+                        </div>
+                      </div>
+                    </form>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="d-none d-lg-table-cell">Male</td>
+                  <td>John Doe</td>
+                  <td>Junior Web Developer</td>
+                  <td>20</td>
+                  <td class="d-none d-lg-table-cell">
+                    Besiktas, Istanbul, Turkey
+                  </td>
+                  <td class="d-none d-lg-table-cell">21 March, 2019</td>
+                  <td>3 years</td>
+                  <td class="d-none d-lg-table-cell">Linkedin</td>
+                  <td>
+                    <form>
+                      <div class="input-group input-group-sm">
+                        <select name="status" id="status" class="custom-select">
+                          <option value="0" selected>Applicant</option>
+                          <option value="1">Longlist</option>
+                          <option value="2">Shortlist</option>
+                          <option value="3">Interview</option>
+                        </select>
+                        <div class="input-group-append">
+                          <button class="btn btn-sm btn-info">update</button>
+                        </div>
+                      </div>
+                    </form>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-      <!-- INDIVIDUAL APPLICANT -->
-      <div class="row">
-        <div class="col">
-          <!-- SMALL TABLE -->
-          <table class="table table-sm table-hover">
-            <thead>
-              <tr>
-                <th class="d-none d-lg-table-cell">Gender</th>
-                <th>Name</th>
-                <th>Title</th>
-                <th>Age</th>
-                <th class="d-none d-lg-table-cell">Address</th>
-                <th class="d-none d-lg-table-cell">Date</th>
-                <th>Experience</th>
-                <th class="d-none d-lg-table-cell">Resume</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="d-none d-lg-table-cell">Male</td>
-                <td>Kamran Elchuzade</td>
-                <td>Junior Web Developer</td>
-                <td>25</td>
-                <td class="d-none d-lg-table-cell">Maslak, Istanbul, Turkey</td>
-                <td class="d-none d-lg-table-cell">12 March, 2019</td>
-                <td>7 years</td>
-                <td class="d-none d-lg-table-cell">HRNations</td>
-                <td>
-                  <form>
-                    <div class="input-group input-group-sm">
-                      <select name="status" id="status" class="custom-select">
-                        <option value="0">Applicant</option>
-                        <option value="1" selected>Longlist</option>
-                        <option value="2">Shortlist</option>
-                        <option value="3">Interview</option>
-                      </select>
-                      <div class="input-group-append">
-                        <button class="btn btn-sm btn-info">update</button>
-                      </div>
-                    </div>
-                  </form>
-                </td>
-              </tr>
-              <tr>
-                <td class="d-none d-lg-table-cell">Female</td>
-                <td>Jane Smith</td>
-                <td>Junior Web Developer</td>
-                <td>32</td>
-                <td class="d-none d-lg-table-cell">Bail, Baku, Azerbaijan</td>
-                <td class="d-none d-lg-table-cell">23 February, 2019</td>
-                <td>10 years</td>
-                <td class="d-none d-lg-table-cell">Upload</td>
-                <td>
-                  <form>
-                    <div class="input-group input-group-sm">
-                      <select name="status" id="status" class="custom-select">
-                        <option value="0">Applicant</option>
-                        <option value="1">Longlist</option>
-                        <option value="2" selected>Shortlist</option>
-                        <option value="3">Interview</option>
-                      </select>
-                      <div class="input-group-append">
-                        <button class="btn btn-sm btn-info">update</button>
-                      </div>
-                    </div>
-                  </form>
-                </td>
-              </tr>
-              <tr>
-                <td class="d-none d-lg-table-cell">Male</td>
-                <td>John Doe</td>
-                <td>Junior Web Developer</td>
-                <td>20</td>
-                <td class="d-none d-lg-table-cell">
-                  Besiktas, Istanbul, Turkey
-                </td>
-                <td class="d-none d-lg-table-cell">21 March, 2019</td>
-                <td>3 years</td>
-                <td class="d-none d-lg-table-cell">Linkedin</td>
-                <td>
-                  <form>
-                    <div class="input-group input-group-sm">
-                      <select name="status" id="status" class="custom-select">
-                        <option value="0" selected>Applicant</option>
-                        <option value="1">Longlist</option>
-                        <option value="2">Shortlist</option>
-                        <option value="3">Interview</option>
-                      </select>
-                      <div class="input-group-append">
-                        <button class="btn btn-sm btn-info">update</button>
-                      </div>
-                    </div>
-                  </form>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
+    </section>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
