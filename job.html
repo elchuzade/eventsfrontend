@@ -21,11 +21,11 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-dark bg-info">
       <div class="container">
         <a href="index.html" class="navbar-brand">HR Nations</a>
         <button
-          class="navbar-toggler bg-light"
+          class="navbar-toggler bg-info"
           data-toggle="collapse"
           data-target="#navbarCollapse"
         >
@@ -66,57 +66,85 @@
       </div>
     </nav>
 
-    <section id="vacancy">
+    <!-- JOB OVERLAY -->
+    <section id="jobOverlay">
+      <div class="container-fluid bg-light">
+        <div class="row align-items-center" style="height: 100px">
+          <div class="col text-center">
+            <h1 class="display-4">VACANCY</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- JOB DASHBOARD -->
+    <section id="jobDashboard">
       <div class="container">
-        <!-- VACANCY HEADER -->
-        <div class="row">
+        <div class="row bg-info mb-3 py-1">
           <div class="col">
-            <h1 class="text-center">VACANCY</h1>
+            <span
+              class="float-left d-flex align-items-center"
+              style="height:100%"
+            >
+              <h4 class="text-white m-0"><i class="fas fa-cog mr-3"></i></h4>
+              <h4 class="d-none d-md-block text-white m-0">
+                VACANCY DASHBOARD
+              </h4>
+            </span>
+            <span class="float-right">
+              <a href="applicants.html" class="btn btn-light align-center py-1">
+                Applicants
+                <h5 class="d-inline m-0 p-0 align-top">
+                  <span class="badge badge-dark ml-2">4</span>
+                </h5>
+              </a>
+              <a href="jobedit.html" class="btn btn-light align-center py-1">
+                <i class="fas fa-pencil-alt"></i>
+              </a>
+              <form class="d-inline">
+                <button class="btn btn-light align-center py-1">
+                  <i class="fas fa-trash text-danger"></i>
+                </button>
+              </form>
+            </span>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <a
-              href="jobedit.html"
-              class="btn btn-secondary"
-              style="min-width: 48px"
-              ><i class="fas fa-pencil-alt"></i
-            ></a>
-            <a href="#" class="btn btn-danger" style="min-width: 48px"
-              ><i class="fas fa-trash"></i
-            ></a>
-          </div>
-        </div>
-        <!-- VACANCY BODY -->
-        <div class="row">
-          <div class="d-none d-md-block col-3">
+      </div>
+    </section>
+    <!-- JOB HEADER -->
+    <section id="jobHeader">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="d-none d-md-block col-md-3 col-lg-2">
             <img
               src="https://picsum.photos/200/200"
               alt="cover"
               class="img-fluid"
             />
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-9 col-md-6 col-lg-8">
             <h3>Full Stack Web Developer</h3>
             <p class="lead">Google Inc</p>
             <p><i>Palo Alto, CA, USA</i></p>
+            <p><i class='text-muted'>Published on January 7, 2019</i></p>
           </div>
-          <div class="col-12 col-md-3">
+          <div class="col-3 col-md-3 col-lg-2 text-right">
             <button
-              class="btn btn-primary"
+              class="btn btn-info"
               data-toggle="modal"
               data-target="#applyModal"
             >
               apply
             </button>
-            <a href="applicants.html" class="btn btn-secondary text-white">
-              applicants
-            </a>
           </div>
         </div>
-        <div class="row">
+      </div>
+    </section>
+    <!-- JOB BIO -->
+    <section id="jobBio">
+      <div class="container">
+        <div class="row mb-3">
           <div class="col-12">
-            <p class="lead">
+            <p class="lead text-center">
               Job description. Lorem ipsum dolor sit amet consectetur,
               adipisicing elit. Non nulla illum, praesentium asperiores voluptas
               commodi nostrum hic voluptates sint. Delectus consequuntur
@@ -126,7 +154,14 @@
               Laboriosam, odit.
             </p>
           </div>
-          <div class="col-12">
+        </div>
+      </div>
+    </section>
+    <!-- JOB REQUIREMENTS -->
+    <section id="jobRequirements">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col">
             <h3>Requirements</h3>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">Cras justo odio</li>
@@ -136,7 +171,14 @@
               <li class="list-group-item">Vestibulum at eros</li>
             </ul>
           </div>
-          <div class="col-12">
+        </div>
+      </div>
+    </section>
+    <!-- JOB RESPONSIBILITIES -->
+    <section id="jobResponsibilities">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col">
             <h3>Responsibilities</h3>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">Cras justo odio</li>
@@ -146,8 +188,15 @@
               <li class="list-group-item">Vestibulum at eros</li>
             </ul>
           </div>
-          <div class="col-12">
-            <p class="lead">
+        </div>
+      </div>
+    </section>
+    <!-- JOB COMPANY INFO -->
+    <section id="jobCompanyInfo">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="lead text-center">
               Company Description. Lorem ipsum dolor sit amet consectetur,
               adipisicing elit. Non nulla illum, praesentium asperiores voluptas
               commodi nostrum hic voluptates sint. Delectus consequuntur
