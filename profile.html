@@ -29,11 +29,11 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-dark bg-info">
       <div class="container">
         <a href="index.html" class="navbar-brand">HR Nations</a>
         <button
-          class="navbar-toggler bg-light"
+          class="navbar-toggler bg-info"
           data-toggle="collapse"
           data-target="#navbarCollapse"
         >
@@ -74,31 +74,34 @@
       </div>
     </nav>
 
-    <!-- PROFILE -->
-    <section id="profile">
-      <div class="container">
-        <!-- PAGE HEADER -->
-        <div class="row mt-3">
-          <div class="col">
-            <h1 class="text-center">PROFILE</h1>
+    <!-- PROFILE OVERLAY -->
+    <section id="resumeOverlay">
+      <div class="container-fluid bg-light">
+        <div class="row align-items-center" style="height: 100px">
+          <div class="col text-center">
+            <h1 class="display-4">PROFILE</h1>
           </div>
         </div>
-        <!-- RESUME OPTIONS -->
-        <div class="row mt-3">
-          <div class="col text-center">
-            <a
-              href="resume.html"
-              class="btn btn-outline-secondary btn-lg mx-3 my-2"
-            >
+      </div>
+    </section>
+    <!-- PROFILE DASHBOARD -->
+    <section id="profileDashboard">
+      <div class="container">
+        <div class="row bg-info mb-3 py-1">
+          <div class="col d-flex align-items-center justify-content-center">
+            <a href="resume.html" class=" btn btn-light py-1 mx-2">
               Filled in Resume
             </a>
-            <a href="#" class="btn btn-outline-secondary btn-lg mx-3 my-2">
+            <a href="#" class=" btn btn-light py-1 mx-2">
               Uploaded Resume
             </a>
           </div>
         </div>
-        <!-- PAGE BODY -->
-        <!-- HEADER -->
+      </div>
+    </section>
+    <!-- HEADER-->
+    <section id="profileHeader">
+      <div class="container">
         <div class="row mt-4">
           <div class="col-12 col-lg-3">
             <img
@@ -176,7 +179,11 @@
             </p>
           </div>
         </div>
-        <!-- BIO -->
+      </div>
+    </section>
+    <!-- BIO -->
+    <section id="profileBio">
+      <div class="container">
         <div class="row mt-3">
           <div class="col">
             <p class="lead text-center">
@@ -187,218 +194,110 @@
             </p>
           </div>
         </div>
-        <!-- EVENTS -->
+      </div>
+    </section>
+    <!-- EVENTS -->
+    <section id="profileEvents">
+      <div class="container">
         <div class="row mt-3">
-          <div class="col">
-            <!-- EVENTS HEADER -->
-            <div class="row">
-              <div class="col-12 border-bottom text-center">
-                <a href='#'><h4 class="text-info">Events</h4></a>
-              </div>
-            </div>
-            <!-- EVENTS BODY -->
-            <div class="row">
-              <div class="col mt-3">
-                <div class="eventsSlider">
-                  <div>
+          <div class="col-12 border-bottom text-center">
+            <a href="#"><h4 class="text-info">Events</h4></a>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col mt-3">
+            <div class="eventsSlider">
+              <div>
+                <div class="row mx-0">
+                  <div class="col bg-light mx-2 p-0">
                     <div class="row mx-0">
-                      <div class="col bg-light mx-2 p-0">
-                        <div class="row mx-0">
-                          <div class="col-3 px-0">
-                            <img
-                              src="https://picsum.photos/205/205"
-                              alt="avatar"
-                              class="img-fluid align-self-center"
-                            />
-                          </div>
-                          <div class="col-9 align-self-center">
-                            <h5 class="mb-0">Artificial Intelligence</h5>
-                            <p class="lead mb-0">Future Tech</p>
-                            <p class="text-muted mb-0">
-                              <i>April 20, 2019</i>
-                              <span class="mx-2">/</span>
-                              <i>200 TRY</i>
-                            </p>
-                          </div>
-                        </div>
+                      <div class="col-3 px-0">
+                        <img
+                          src="https://picsum.photos/205/205"
+                          alt="avatar"
+                          class="img-fluid align-self-center"
+                        />
                       </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="row mx-0">
-                      <div class="col bg-light mx-2 p-0">
-                        <div class="row mx-0">
-                          <div class="col-3 px-0">
-                            <img
-                              src="https://picsum.photos/203/203"
-                              alt="avatar"
-                              class="img-fluid align-self-center"
-                            />
-                          </div>
-                          <div class="col-9 align-self-center">
-                            <h5 class="mb-0">Industry 4.0</h5>
-                            <p class="lead mb-0">Future Tech</p>
-                            <p class="text-muted mb-0">
-                              <i>April 24, 2019</i>
-                              <span class="mx-2">/</span>
-                              <i>FREE</i>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="row mx-0">
-                      <div class="col bg-light mx-2 p-0">
-                        <div class="row mx-0">
-                          <div class="col-3 px-0">
-                            <img
-                              src="https://picsum.photos/202/202"
-                              alt="avatar"
-                              class="img-fluid align-self-center"
-                            />
-                          </div>
-                          <div class="col-9 align-self-center">
-                            <h5 class="mb-0">Product Market Fit</h5>
-                            <p class="lead mb-0">Business</p>
-                            <p class="text-muted mb-0">
-                              <i>May 10, 2019</i>
-                              <span class="mx-2">/</span>
-                              <i>100 TRY</i>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="row mx-0">
-                      <div class="col bg-light mx-2 p-0">
-                        <div class="row mx-0">
-                          <div class="col-3 px-0">
-                            <img
-                              src="https://picsum.photos/201/201"
-                              alt="avatar"
-                              class="img-fluid align-self-center"
-                            />
-                          </div>
-                          <div class="col-9 align-self-center">
-                            <h5 class="mb-0">How To Build Resume</h5>
-                            <p class="lead mb-0">Human Resources</p>
-                            <p class="text-muted mb-0">
-                              <i>June 2, 2019</i>
-                              <span class="mx-2">/</span>
-                              <i>50 TRY</i>
-                            </p>
-                          </div>
-                        </div>
+                      <div class="col-9 align-self-center">
+                        <h5 class="mb-0">Artificial Intelligence</h5>
+                        <p class="lead mb-0">Future Tech</p>
+                        <p class="text-muted mb-0">
+                          <i>April 20, 2019</i>
+                          <span class="mx-2">/</span>
+                          <i>200 TRY</i>
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <!-- JOBS -->
-        <div class="row mt-5">
-          <div class="col">
-            <!-- JOBS HEADER -->
-            <div class="row">
-              <div class="col-12 border-bottom text-center">
-                  <a href='applications.html'><h4 class="text-info">Applications</h4></a>
+              <div>
+                <div class="row mx-0">
+                  <div class="col bg-light mx-2 p-0">
+                    <div class="row mx-0">
+                      <div class="col-3 px-0">
+                        <img
+                          src="https://picsum.photos/203/203"
+                          alt="avatar"
+                          class="img-fluid align-self-center"
+                        />
+                      </div>
+                      <div class="col-9 align-self-center">
+                        <h5 class="mb-0">Industry 4.0</h5>
+                        <p class="lead mb-0">Future Tech</p>
+                        <p class="text-muted mb-0">
+                          <i>April 24, 2019</i>
+                          <span class="mx-2">/</span>
+                          <i>FREE</i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <!-- JOBS BODY -->
-            <div class="row">
-              <div class="col mt-3">
-                <div class="eventsSlider">
-                  <div>
+              <div>
+                <div class="row mx-0">
+                  <div class="col bg-light mx-2 p-0">
                     <div class="row mx-0">
-                      <div class="col bg-light mx-2 p-0">
-                        <div class="row mx-0">
-                          <div class="col-3 px-0">
-                            <img
-                              src="https://picsum.photos/209/209"
-                              alt="avatar"
-                              class="img-fluid align-self-center"
-                            />
-                          </div>
-                          <div class="col-9 align-self-center">
-                            <h5 class="mb-0">Junior iOS Developer</h5>
-                            <p class="lead mb-0">Teknasyon</p>
-                            <p class="text-muted mb-0">
-                              <i>Maslak, Istanbul, Turkey</i>
-                            </p>
-                          </div>
-                        </div>
+                      <div class="col-3 px-0">
+                        <img
+                          src="https://picsum.photos/202/202"
+                          alt="avatar"
+                          class="img-fluid align-self-center"
+                        />
+                      </div>
+                      <div class="col-9 align-self-center">
+                        <h5 class="mb-0">Product Market Fit</h5>
+                        <p class="lead mb-0">Business</p>
+                        <p class="text-muted mb-0">
+                          <i>May 10, 2019</i>
+                          <span class="mx-2">/</span>
+                          <i>100 TRY</i>
+                        </p>
                       </div>
                     </div>
                   </div>
-                  <div>
+                </div>
+              </div>
+              <div>
+                <div class="row mx-0">
+                  <div class="col bg-light mx-2 p-0">
                     <div class="row mx-0">
-                      <div class="col bg-light mx-2 p-0">
-                        <div class="row mx-0">
-                          <div class="col-3 px-0">
-                            <img
-                              src="https://picsum.photos/206/206"
-                              alt="avatar"
-                              class="img-fluid align-self-center"
-                            />
-                          </div>
-                          <div class="col-9 align-self-center">
-                            <h5 class="mb-0">Frontend Web Developer</h5>
-                            <p class="lead mb-0">Yandex Inc</p>
-                            <p class="text-muted mb-0">
-                              <i>Moscow, Russia</i>
-                            </p>
-                          </div>
-                        </div>
+                      <div class="col-3 px-0">
+                        <img
+                          src="https://picsum.photos/201/201"
+                          alt="avatar"
+                          class="img-fluid align-self-center"
+                        />
                       </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="row mx-0">
-                      <div class="col bg-light mx-2 p-0">
-                        <div class="row mx-0">
-                          <div class="col-3 px-0">
-                            <img
-                              src="https://picsum.photos/207/207"
-                              alt="avatar"
-                              class="img-fluid align-self-center"
-                            />
-                          </div>
-                          <div class="col-9 align-self-center">
-                            <h5 class="mb-0">UI/UX Designer</h5>
-                            <p class="lead mb-0">Facebook Inc</p>
-                            <p class="text-muted mb-0">
-                              <i>5th Ave, 47th St, NY, USA</i>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="row mx-0">
-                      <div class="col bg-light mx-2 p-0">
-                        <div class="row mx-0">
-                          <div class="col-3 px-0">
-                            <img
-                              src="https://picsum.photos/208/208"
-                              alt="avatar"
-                              class="img-fluid align-self-center"
-                            />
-                          </div>
-                          <div class="col-9 align-self-center">
-                            <h5 class="mb-0">Full Stack Web Developer</h5>
-                            <p class="lead mb-0">Apple Inc</p>
-                            <p class="text-muted mb-0">
-                              <i>Cupertino, CA, USA</i>
-                            </p>
-                          </div>
-                        </div>
+                      <div class="col-9 align-self-center">
+                        <h5 class="mb-0">How To Build Resume</h5>
+                        <p class="lead mb-0">Human Resources</p>
+                        <p class="text-muted mb-0">
+                          <i>June 2, 2019</i>
+                          <span class="mx-2">/</span>
+                          <i>50 TRY</i>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -409,6 +308,112 @@
         </div>
       </div>
     </section>
+    <section id="profileApplications">
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col-12 border-bottom text-center">
+            <a href="applications.html"
+              ><h4 class="text-info">Applications</h4></a
+            >
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col mt-3">
+            <div class="eventsSlider">
+              <div>
+                <div class="row mx-0">
+                  <div class="col bg-light mx-2 p-0">
+                    <div class="row mx-0">
+                      <div class="col-3 px-0">
+                        <img
+                          src="https://picsum.photos/209/209"
+                          alt="avatar"
+                          class="img-fluid align-self-center"
+                        />
+                      </div>
+                      <div class="col-9 align-self-center">
+                        <h5 class="mb-0">Junior iOS Developer</h5>
+                        <p class="lead mb-0">Teknasyon</p>
+                        <p class="text-muted mb-0">
+                          <i>Maslak, Istanbul, Turkey</i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row mx-0">
+                  <div class="col bg-light mx-2 p-0">
+                    <div class="row mx-0">
+                      <div class="col-3 px-0">
+                        <img
+                          src="https://picsum.photos/206/206"
+                          alt="avatar"
+                          class="img-fluid align-self-center"
+                        />
+                      </div>
+                      <div class="col-9 align-self-center">
+                        <h5 class="mb-0">Frontend Web Developer</h5>
+                        <p class="lead mb-0">Yandex Inc</p>
+                        <p class="text-muted mb-0">
+                          <i>Moscow, Russia</i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row mx-0">
+                  <div class="col bg-light mx-2 p-0">
+                    <div class="row mx-0">
+                      <div class="col-3 px-0">
+                        <img
+                          src="https://picsum.photos/207/207"
+                          alt="avatar"
+                          class="img-fluid align-self-center"
+                        />
+                      </div>
+                      <div class="col-9 align-self-center">
+                        <h5 class="mb-0">UI/UX Designer</h5>
+                        <p class="lead mb-0">Facebook Inc</p>
+                        <p class="text-muted mb-0">
+                          <i>5th Ave, 47th St, NY, USA</i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row mx-0">
+                  <div class="col bg-light mx-2 p-0">
+                    <div class="row mx-0">
+                      <div class="col-3 px-0">
+                        <img
+                          src="https://picsum.photos/208/208"
+                          alt="avatar"
+                          class="img-fluid align-self-center"
+                        />
+                      </div>
+                      <div class="col-9 align-self-center">
+                        <h5 class="mb-0">Full Stack Web Developer</h5>
+                        <p class="lead mb-0">Apple Inc</p>
+                        <p class="text-muted mb-0">
+                          <i>Cupertino, CA, USA</i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- TO BE DELETED LATER -->
     <div class="my-5 py-5"></div>
     <script
