@@ -21,7 +21,7 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-dark bg-info">
       <div class="container">
         <a href="index.html" class="navbar-brand">HR Nations</a>
         <button
@@ -65,25 +65,39 @@
         </div>
       </div>
     </nav>
-
-    <section id="jobs">
-      <div class="container">
-        <!-- JOBS HEADER -->
-        <div class="row">
-          <div class="col">
-            <h1 class="text-center">
-              VACANCIES
-              <a
-                href="#"
-                class="btn btn-info ml-5"
-                data-toggle="modal"
-                data-target="#addJobModal"
-              >
-                <i class="fas fa-plus fa-2x"></i>
-              </a>
-            </h1>
+    <!-- JOBS OVERLAY -->
+    <section id="jobsOverlay">
+      <div class="container-fluid bg-light">
+        <div class="row align-items-center" style="height: 200px">
+          <div class="col text-center">
+            <h1 class="display-4">VACANCIES</h1>
           </div>
         </div>
+      </div>
+    </section>
+    <!-- JOB DASHBOARD -->
+    <section id="jobsDashboard">
+      <div class="container">
+        <div class="row bg-info py-2 mb-4">
+          <div class="col text-center">
+            <button
+              class="btn btn-light align-center py-1"
+              data-toggle="modal"
+              data-target="#addJobModal"
+            >
+              <i class="fas fa-plus fa-2x"></i>
+            </button>
+            <span class="h2 text-white align-middle mx-4">VACANCIES</span>
+            <button class="btn btn-light align-center py-1">
+              <b class="h3">15</b>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- JOBS LIST -->
+    <section id="jobs">
+      <div class="container">
         <!-- INDIVIDUAL JOB -->
         <div class="row">
           <div class="d-none d-md-block col-3">

@@ -21,11 +21,11 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-dark bg-info">
       <div class="container">
         <a href="index.html" class="navbar-brand">HR Nations</a>
         <button
-          class="navbar-toggler bg-light"
+          class="navbar-toggler bg-info"
           data-toggle="collapse"
           data-target="#navbarCollapse"
         >
@@ -65,15 +65,19 @@
         </div>
       </div>
     </nav>
-
-    <section id="applications">
-      <div class="container">
-        <!-- APPLICATIONS HEADER -->
-        <div class="row">
-          <div class="col">
-            <h1 class="text-center">APPLICATIONS</h1>
+    <!-- APPLICATIONS OVERLAY -->
+    <section id="applicationsOverlay">
+      <div class="container-fluid bg-light">
+        <div class="row align-items-center mb-3" style="height: 100px">
+          <div class="col text-center">
+            <h1 class="display-4">APPLICATIONS</h1>
           </div>
         </div>
+      </div>
+    </section>
+    <!-- APPLICATIONS -->
+    <section id="applications">
+      <div class="container">
         <!-- INDIVIDUAL APPLICATION -->
         <div class="row">
           <div class="col">
@@ -126,6 +130,7 @@
         </div>
       </div>
     </section>
+    
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

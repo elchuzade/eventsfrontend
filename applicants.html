@@ -21,11 +21,11 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-dark bg-info">
       <div class="container">
         <a href="index.html" class="navbar-brand">HR Nations</a>
         <button
-          class="navbar-toggler bg-light"
+          class="navbar-toggler bg-info"
           data-toggle="collapse"
           data-target="#navbarCollapse"
         >
@@ -65,20 +65,35 @@
         </div>
       </div>
     </nav>
-
-    <section id="applicants">
-      <div class="container">
-        <!-- APPLICANTS HEADER -->
-        <div class="row">
+    <!-- APPLICANTS OVERLAY -->
+    <section id="applicantsOverlay">
+      <div class="container-fluid bg-light">
+        <div class="row align-items-center mb-3" style="height: 100px">
           <div class="col text-center">
-            <h1>APPLICANTS</h1>
-            <h2>Apple Inc</h2>
-            <p class="lead">Senior Software Developer</p>
-            <p>1 Infinity Loop, Palo Alto, CA, USA</p>
-            <p class="text-muted"><i>Posted on 12 February, 2019</i></p>
+            <h1 class="display-4">APPLICANTS</h1>
           </div>
         </div>
-        <!-- INDIVIDUAL APPLICANT -->
+      </div>
+    </section>
+    <!-- APPLICANTS HEADER -->
+    <section id="applicantsHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h2 class="my-0">Apple Inc</h2>
+            <p class="lead my-0">Senior Software Developer</p>
+            <p class="my-0">1 Infinity Loop, Palo Alto, CA, USA</p>
+            <p class="text-muted mt-0 mb-2">
+              <i>Posted on 12 February, 2019</i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- INDIVIDUAL APPLICANT -->
+    <section id="applicantsBody">
+      <div class="container">
         <div class="row">
           <div class="col">
             <!-- SMALL TABLE -->
