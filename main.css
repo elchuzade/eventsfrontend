@@ -1,0 +1,15 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .slick-prev:before,
+  .slick-next:before {
+    display: none;
+  }
+}
