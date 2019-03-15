@@ -357,119 +357,249 @@
           </div>
         </div>
         <div class="row mx-2 mt-3">
-          <div
-            class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 mx-auto"
-            style="max-width: 280px"
-          >
+          <div class="col-12 col-lg-6 col-xl-4 mb-4 mx-auto" style="max-width: 100%">
             <div class="card" style="border:none;">
               <div
-                class="card-header m-0 p-0"
+                class="card-header m-0 p-0 text-center w-50 mx-auto"
                 style="background: white; border:none"
               >
                 <img
                   src="https://picsum.photos/469/469"
                   alt="image"
                   class="img-fluid rounded-circle p-3"
-                  style="max-width:100%"
                 />
               </div>
-              <div class="card-body" style="border-bottom: 3px solid lightgrey">
-                <h5 class="card-title">John Doe</h5>
-                <h6 class="card-subtitle text-muted mb-1">
-                  Senior Software Developer
-                </h6>
-                <h6 class="text-muted mb-2"><i>Daimler AG</i></h6>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi, obcaecati?
-                </p>
+              <!-- SPEAKER IMAGE FORM -->
+              <form>
+                <div class="input-group">
+                  <div class="custom-file">
+                    <input
+                      type="file"
+                      class="custom-file-input"
+                      id="eventAvatar"
+                      aria-describedby="avatarInput"
+                    />
+                    <label class="custom-file-label text-left" for="eventAvatar"
+                      >Choose Avatar</label
+                    >
+                  </div>
+                  <div class="input-group-append">
+                    <button class="btn btn-info" type="button" id="avatarInput">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <div
+                class="card-body text-center"
+                style="border-bottom: 3px solid lightgrey"
+              >
+                <form id='speakerId'>
+                  <div class="form-group mb-2">
+                    <input
+                      type="text"
+                      class="text-center form-control"
+                      value="John Doe"
+                    />
+                  </div>
+                  <div class="form-group mb-2">
+                    <input
+                      type="text"
+                      class="text-center form-control"
+                      value="Senior Software Developer"
+                    />
+                  </div>
+                  <div class="form-group mb-2">
+                    <input
+                      type="text"
+                      class="text-center form-control"
+                      value="Daimler AG"
+                    />
+                  </div>
+                  <div class="form-group mb-2">
+                    <textarea rows="3" class="form-control text-center">
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, voluptatum.</textarea
+                    >
+                  </div>
+                </form>
+                <div class="row">
+                  <div class="col-3">
+                    <form class='m-0 p-0'>
+                      <button class="btn btn-danger btn-block">
+                        <i class="fas fa-trash"></i>
+                      </button>
+                    </form>
+                  </div>
+                  <div class="col-9">
+                    <button class="btn btn-info btn-block" form='speakerId'>
+                      Update Speaker
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 mx-auto"
-            style="max-width: 280px"
-          >
+          <div class="col-12 col-lg-6 col-xl-4 mb-4 mx-auto" style="max-width: 100%">
             <div class="card" style="border:none;">
               <div
-                class="card-header m-0 p-0"
+                class="card-header m-0 p-0 text-center w-50 mx-auto"
                 style="background: white; border:none"
               >
                 <img
-                  src="https://picsum.photos/481/481"
+                  src="https://picsum.photos/469/469"
                   alt="image"
                   class="img-fluid rounded-circle p-3"
-                  style="max-width:100%"
                 />
               </div>
-              <div class="card-body" style="border-bottom: 3px solid lightgrey">
-                <h5 class="card-title">John Doe</h5>
-                <h6 class="card-subtitle text-muted mb-1">
-                  Senior Software Developer
-                </h6>
-                <h6 class="text-muted mb-2"><i>Daimler AG</i></h6>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi, obcaecati?
-                </p>
+              <!-- SPEAKER IMAGE FORM -->
+              <form>
+                <div class="input-group">
+                  <div class="custom-file">
+                    <input
+                      type="file"
+                      class="custom-file-input"
+                      id="eventAvatar"
+                      aria-describedby="avatarInput"
+                    />
+                    <label class="custom-file-label text-left" for="eventAvatar"
+                      >Choose Avatar</label
+                    >
+                  </div>
+                  <div class="input-group-append">
+                    <button class="btn btn-info" type="button" id="avatarInput">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <div
+                class="card-body text-center"
+                style="border-bottom: 3px solid lightgrey"
+              >
+                <form id='speakerId'>
+                  <div class="form-group mb-2">
+                    <input
+                      type="text"
+                      class="text-center form-control"
+                      value="John Doe"
+                    />
+                  </div>
+                  <div class="form-group mb-2">
+                    <input
+                      type="text"
+                      class="text-center form-control"
+                      value="Senior Software Developer"
+                    />
+                  </div>
+                  <div class="form-group mb-2">
+                    <input
+                      type="text"
+                      class="text-center form-control"
+                      value="Daimler AG"
+                    />
+                  </div>
+                  <div class="form-group mb-2">
+                    <textarea rows="3" class="form-control text-center">
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, voluptatum.</textarea
+                    >
+                  </div>
+                </form>
+                <div class="row">
+                  <div class="col-3">
+                    <form class='m-0 p-0'>
+                      <button class="btn btn-danger btn-block">
+                        <i class="fas fa-trash"></i>
+                      </button>
+                    </form>
+                  </div>
+                  <div class="col-9">
+                    <button class="btn btn-info btn-block" form='speakerId'>
+                      Update Speaker
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 mx-auto"
-            style="max-width: 280px"
-          >
+          <div class="col-12 col-lg-6 col-xl-4 mb-4 mx-auto" style="max-width: 100%">
             <div class="card" style="border:none;">
               <div
-                class="card-header m-0 p-0"
+                class="card-header m-0 p-0 text-center w-50 mx-auto"
                 style="background: white; border:none"
               >
                 <img
-                  src="https://picsum.photos/482/482"
+                  src="https://picsum.photos/469/469"
                   alt="image"
                   class="img-fluid rounded-circle p-3"
-                  style="max-width:100%"
                 />
               </div>
-              <div class="card-body" style="border-bottom: 3px solid lightgrey">
-                <h5 class="card-title">John Doe</h5>
-                <h6 class="card-subtitle text-muted mb-1">
-                  Senior Software Developer
-                </h6>
-                <h6 class="text-muted mb-2"><i>Daimler AG</i></h6>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi, obcaecati?
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 mx-auto"
-            style="max-width: 280px"
-          >
-            <div class="card" style="border:none;">
+              <!-- SPEAKER IMAGE FORM -->
+              <form>
+                <div class="input-group">
+                  <div class="custom-file">
+                    <input
+                      type="file"
+                      class="custom-file-input"
+                      id="eventAvatar"
+                      aria-describedby="avatarInput"
+                    />
+                    <label class="custom-file-label text-left" for="eventAvatar"
+                      >Choose Avatar</label
+                    >
+                  </div>
+                  <div class="input-group-append">
+                    <button class="btn btn-info" type="button" id="avatarInput">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
               <div
-                class="card-header m-0 p-0"
-                style="background: white; border:none;"
+                class="card-body text-center"
+                style="border-bottom: 3px solid lightgrey"
               >
-                <img
-                  src="https://picsum.photos/483/483"
-                  alt="image"
-                  class="img-fluid rounded-circle p-3"
-                  style="max-width:100%;"
-                />
-              </div>
-              <div class="card-body" style="border-bottom: 3px solid lightgrey">
-                <h5 class="card-title">John Doe</h5>
-                <h6 class="card-subtitle text-muted mb-1">
-                  Senior Software Developer
-                </h6>
-                <h6 class="text-muted mb-2"><i>Daimler AG</i></h6>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi, obcaecati?
-                </p>
+                <form id='speakerId'>
+                  <div class="form-group mb-2">
+                    <input
+                      type="text"
+                      class="text-center form-control"
+                      value="John Doe"
+                    />
+                  </div>
+                  <div class="form-group mb-2">
+                    <input
+                      type="text"
+                      class="text-center form-control"
+                      value="Senior Software Developer"
+                    />
+                  </div>
+                  <div class="form-group mb-2">
+                    <input
+                      type="text"
+                      class="text-center form-control"
+                      value="Daimler AG"
+                    />
+                  </div>
+                  <div class="form-group mb-2">
+                    <textarea rows="3" class="form-control text-center">
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, voluptatum.</textarea
+                    >
+                  </div>
+                </form>
+                <div class="row">
+                  <div class="col-3">
+                    <form class='m-0 p-0'>
+                      <button class="btn btn-danger btn-block">
+                        <i class="fas fa-trash"></i>
+                      </button>
+                    </form>
+                  </div>
+                  <div class="col-9">
+                    <button class="btn btn-info btn-block" form='speakerId'>
+                      Update Speaker
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -486,7 +616,7 @@
               form="editEventForm"
               class="btn btn-lg btn-info btn-block"
             >
-              Save
+              Update Event
             </button>
           </div>
         </div>
@@ -511,19 +641,11 @@
               </div>
               <div class="form-group">
                 <label>Speaker Title</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="title"
-                />
+                <input type="text" class="form-control" placeholder="title" />
               </div>
               <div class="form-group">
                 <label>Speaker Company</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="company"
-                />
+                <input type="text" class="form-control" placeholder="company" />
               </div>
               <div class="form-group">
                 <label>Speaker Bio</label>
@@ -543,7 +665,7 @@
           </div>
         </div>
       </div>
-    </div> 
+    </div>
 
     <div class="py-5 my-5"></div>
     <script
