@@ -91,7 +91,12 @@
               </h4>
             </span>
             <span class="float-right">
-              <button href="#" type='submit' form='editEventForm' class="btn btn-light align-center py-1">
+              <button
+                href="#"
+                type="submit"
+                form="editEventForm"
+                class="btn btn-light align-center py-1"
+              >
                 <i class="fas fa-save"></i>
               </button>
               <form class="d-inline">
@@ -167,7 +172,8 @@
         </div>
       </div>
     </section>
-    <form class='w-100' id='editEventForm'>
+    <!-- EDIT EVENT FORM -->
+    <form class="w-100" id="editEventForm">
       <!-- EDIT EVENT HEADER -->
       <section id="editEventHeader">
         <div class="container">
@@ -184,18 +190,23 @@
                 value="Blog About Something Cool"
               />
             </div>
-            <div class="col-12 col-md-8 col-lg-6 mx-auto text-center form-group">
+            <div
+              class="col-12 col-md-8 col-lg-6 mx-auto text-center form-group"
+            >
               <div class="input-group mb-3">
                 <select class="custom-select" id="categoryInput">
-                  <option selected>Future Tech</option>
-                  <option value="1">Business</option>
-                  <option value="2">Human Resources</option>
-                  <option value="3">Industry 4.0</option>
-                  <option value="3">Wealth</option>
-                  <option value="3">Health</option>
+                  <option value="futureTech" selected>Future Tech</option>
+                  <option value="business">Business</option>
+                  <option value="humanResources">Human Resources</option>
+                  <option value="industry_4.0">Industry 4.0</option>
+                  <option value="wealth">Wealth</option>
+                  <option value="health">Health</option>
+                  <option value="others">Others</option>
                 </select>
                 <div class="input-group-append">
-                  <label class="input-group-text" for="categoryInput">Category</label>
+                  <label class="input-group-text" for="categoryInput"
+                    >Category</label
+                  >
                 </div>
               </div>
             </div>
@@ -226,7 +237,11 @@
                     Map Description
                   </span>
                 </label>
-                <textarea id="mapDescription" rows="5" class="form-control text-center">
+                <textarea
+                  id="mapDescription"
+                  rows="5"
+                  class="form-control text-center"
+                >
   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti aspernatur consequuntur odio quibusdam cum quia? Eligendi velit beatae provident quos ut inventore praesentium cupiditate nulla!
                 </textarea>
               </div>
@@ -239,7 +254,13 @@
                       <i class="fas fa-map-marker-alt"></i>
                     </span>
                   </div>
-                  <input type="text" class="form-control" value='Istanbul, Turkey' aria-label="location" aria-describedby="location">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Istanbul, Turkey"
+                    aria-label="location"
+                    aria-describedby="location"
+                  />
                 </div>
               </div>
               <div class="form-group mb-1">
@@ -249,7 +270,13 @@
                       <i class="fas fa-calendar-alt"></i>
                     </span>
                   </div>
-                  <input type="date" class="form-control" value='2018-07-22' aria-label="date" aria-describedby="date">
+                  <input
+                    type="date"
+                    class="form-control"
+                    value="2018-07-22"
+                    aria-label="date"
+                    aria-describedby="date"
+                  />
                 </div>
               </div>
               <div class="form-group mb-1">
@@ -259,7 +286,13 @@
                       <i class="fas fa-clock"></i>
                     </span>
                   </div>
-                  <input type="text" class="form-control" value='20:00' aria-label="time" aria-describedby="time">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="20:00"
+                    aria-label="time"
+                    aria-describedby="time"
+                  />
                 </div>
               </div>
               <div class="form-group">
@@ -269,7 +302,13 @@
                       <i class="fas fa-money-bill"></i>
                     </span>
                   </div>
-                  <input type="number" class="form-control" value='200' aria-label="Username" aria-describedby="location">
+                  <input
+                    type="number"
+                    class="form-control"
+                    value="200"
+                    aria-label="Username"
+                    aria-describedby="location"
+                  />
                   <div class="input-group-append">
                     <span class="input-group-text">EUR</span>
                   </div>
@@ -303,12 +342,25 @@
     <section id="eventSpeakers">
       <div class="container">
         <div class="row mt-3">
-          <div class="col text-center">
-            <h3 class="text-info">Speakers</h3>
+          <div class="col d-flex align-items-center justify-content-center">
+            <button
+              class=" btn btn-info py-1"
+              data-toggle="modal"
+              data-target="#addSpeakerModal"
+            >
+              <i class="fas fa-plus"></i>
+            </button>
+            <span class="h4 text-info mx-4 mb-0">Speakers</span>
+            <h3 class="m-0 p-0 d-flex align-items-center">
+              <span class="badge badge-info ml-0">4</span>
+            </h3>
           </div>
         </div>
         <div class="row mx-2 mt-3">
-          <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 mx-auto" style='max-width: 280px'>
+          <div
+            class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 mx-auto"
+            style="max-width: 280px"
+          >
             <div class="card" style="border:none;">
               <div
                 class="card-header m-0 p-0"
@@ -318,7 +370,7 @@
                   src="https://picsum.photos/469/469"
                   alt="image"
                   class="img-fluid rounded-circle p-3"
-                  style='max-width:100%'
+                  style="max-width:100%"
                 />
               </div>
               <div class="card-body" style="border-bottom: 3px solid lightgrey">
@@ -334,7 +386,10 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 mx-auto" style='max-width: 280px'>
+          <div
+            class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 mx-auto"
+            style="max-width: 280px"
+          >
             <div class="card" style="border:none;">
               <div
                 class="card-header m-0 p-0"
@@ -344,7 +399,7 @@
                   src="https://picsum.photos/481/481"
                   alt="image"
                   class="img-fluid rounded-circle p-3"
-                  style='max-width:100%'
+                  style="max-width:100%"
                 />
               </div>
               <div class="card-body" style="border-bottom: 3px solid lightgrey">
@@ -360,7 +415,10 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 mx-auto" style='max-width: 280px'>
+          <div
+            class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 mx-auto"
+            style="max-width: 280px"
+          >
             <div class="card" style="border:none;">
               <div
                 class="card-header m-0 p-0"
@@ -370,7 +428,7 @@
                   src="https://picsum.photos/482/482"
                   alt="image"
                   class="img-fluid rounded-circle p-3"
-                  style='max-width:100%'
+                  style="max-width:100%"
                 />
               </div>
               <div class="card-body" style="border-bottom: 3px solid lightgrey">
@@ -386,7 +444,10 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 mx-auto" style='max-width: 280px'>
+          <div
+            class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4 mx-auto"
+            style="max-width: 280px"
+          >
             <div class="card" style="border:none;">
               <div
                 class="card-header m-0 p-0"
@@ -396,7 +457,7 @@
                   src="https://picsum.photos/483/483"
                   alt="image"
                   class="img-fluid rounded-circle p-3"
-                  style='max-width:100%;'
+                  style="max-width:100%;"
                 />
               </div>
               <div class="card-body" style="border-bottom: 3px solid lightgrey">
@@ -415,16 +476,74 @@
         </div>
       </div>
     </section>
-
+    <!-- EDIT EVENT SUBMIT -->
     <section id="formFooter">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-8 col-lg-6 mx-auto">
-            <button type='submit' form='editEventForm' class="btn btn-lg btn-info btn-block">Save</button>
+            <button
+              type="submit"
+              form="editEventForm"
+              class="btn btn-lg btn-info btn-block"
+            >
+              Save
+            </button>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- SPEAKER MODAL -->
+    <div class="modal fade" id="addSpeakerModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title">Add New Speaker</h5>
+            <button class="close" data-dismiss="modal">
+              <span><i class="fas fa-times mt-1"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label>Speaker Name</label>
+                <input type="text" class="form-control" placeholder="name" />
+              </div>
+              <div class="form-group">
+                <label>Speaker Title</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="title"
+                />
+              </div>
+              <div class="form-group">
+                <label>Speaker Company</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="company"
+                />
+              </div>
+              <div class="form-group">
+                <label>Speaker Bio</label>
+                <textarea
+                  rows="3"
+                  type="text"
+                  class="form-control"
+                  placeholder="bio"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-info btn-lg btn-block" data-dismiss="modal">
+              Add Event
+            </button>
+          </div>
+        </div>
+      </div>
+    </div> 
 
     <div class="py-5 my-5"></div>
     <script
