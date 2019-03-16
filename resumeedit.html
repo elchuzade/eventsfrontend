@@ -642,7 +642,9 @@
                 </form>
               </div>
               <div class="col-12">
-                <textarea type="text" rows='3' class="form-control mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusamus voluptatem unde temporibus minus quae natus tenetur laudantium obcaecati provident?</textarea>
+                <div class="form-group">
+                  <textarea type="text" rows='3' class="form-control mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusamus voluptatem unde temporibus minus quae natus tenetur laudantium obcaecati provident?</textarea>
+                </div>
               </div>
             </div>
           </div>
@@ -654,7 +656,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <!-- SKILLS HEADER -->
+            <!-- LANGUAGES HEADER -->
             <div class="row mb-2">
               <div class="col-12 border-bottom pb-2">
                 <div class="col d-flex align-items-center">
@@ -672,7 +674,7 @@
                 </div>
               </div>
             </div>
-            <!-- Languages BODY -->
+            <!-- LANGUAGES BODY -->
             <div class="row mx-3 mb-5 pt-3">
               <div class="col-12 col-md-6 col-lg-4">
                 <div class="row pt-3 border">
@@ -716,15 +718,40 @@
         <div class="row">
           <div class="col">
             <!-- INTERESTS HEADER -->
-            <div class="row">
-              <div class="col-12 border-bottom">
-                <h4 class="text-info">Interests</h4>
+            <div class="row mb-2">
+              <div class="col-12 border-bottom pb-2">
+                <div class="col d-flex align-items-center">
+                  <button
+                    class="btn btn-info py-1"
+                    data-toggle="modal"
+                    data-target="#addInterestModal"
+                  >
+                    <i class="fas fa-plus"></i>
+                  </button>
+                  <span class="h4 text-info mx-4 mb-0">Interests</span>
+                  <h3 class="m-0 p-0 d-flex align-items-center">
+                    <span class="badge badge-info ml-0">2</span>
+                  </h3>
+                </div>
               </div>
             </div>
             <!-- INTERESTS BODY -->
-            <div class="row mt-2">
+            <div class="row mx-3 mb-5 pt-3">
               <div class="col-12 col-md-6 col-lg-4">
-                <p class="lead text-center">Open Source</p>
+                <div class="row pt-3 border">
+                  <div class="col-12 d-flex mb-2">
+                    <form>
+                      <button class="btn btn-success mx-2">Save</button>
+                    </form>
+                    <form>
+                      <button class="btn btn-danger mx-2">Delete</button>
+                    </form>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control mb-3" value='Artificial Intelligence' />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -737,41 +764,77 @@
         <div class="row">
           <div class="col">
             <!-- REFERENCES HEADER -->
-            <div class="row">
-              <div class="col-12 border-bottom">
-                <h4 class="text-info">References</h4>
+            <div class="row mb-2">
+              <div class="col-12 border-bottom pb-2">
+                <div class="col d-flex align-items-center">
+                  <button
+                    class="btn btn-info py-1"
+                    data-toggle="modal"
+                    data-target="#addReferenceModal"
+                  >
+                    <i class="fas fa-plus"></i>
+                  </button>
+                  <span class="h4 text-info mx-4 mb-0">References</span>
+                  <h3 class="m-0 p-0 d-flex align-items-center">
+                    <span class="badge badge-info ml-0">3</span>
+                  </h3>
+                </div>
               </div>
             </div>
             <!-- REFERENCES BODY -->
-            <div class="row mx-2 mt-3">
-              <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">John Doe</h5>
-                    <h6 class="card-subtitle text-muted mb-1">
-                      Senior Software Developer
-                    </h6>
-                    <h6 class="text-muted mb-2"><i>Daimler AG</i></h6>
-                    <p class="card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Excepturi, obcaecati?
-                    </p>
-                    <p>
-                      <span class="d-inline-block" style="min-width: 20px">
-                        <i class="fas fa-at"></i>
-                      </span>
-                      <span class="border-left pl-2">
-                        johndoe@gmail.com
-                      </span>
-                    </p>
-                    <p>
-                      <span class="d-inline-block" style="min-width: 20px">
-                        <i class="fas fa-phone"></i>
-                      </span>
-                      <span class="border-left pl-2">
-                        +905385999823
-                      </span>
-                    </p>
+            <div class="row mx-3 mb-5 pt-3">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="row pt-3 border">
+                  <div class="col-12 d-flex mb-2">
+                    <form>
+                      <button class="btn btn-success mx-2">Save</button>
+                    </form>
+                    <form>
+                      <button class="btn btn-danger mx-2">Delete</button>
+                    </form>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control mb-3" value='John Doe' />
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control mb-3" value='Senior Software Developer' />
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control mb-3" value='Daimler AG' />
+                    </div>
+                    <div class="form-group">
+                      <textarea type="text" rows='3' class="form-control mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo laboriosam saepe aut corporis tempora dignissimos voluptates facere temporibus illum iste?</textarea>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="fas fa-at" style="min-width: 25px"></i>
+                          </span>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          value="elchuzade@gmail.com"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="fas fa-phone" style="min-width: 25px"></i>
+                          </span>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          value="+905385999823"
+                        />
+                      </div>
+                    </div>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -1135,6 +1198,36 @@
           <div class="modal-footer">
             <button class="btn btn-info btn-lg btn-block" data-dismiss="modal">
               Add Language
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- INTEREST MODAL -->
+    <div class="modal fade" id="addInterestModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title">Add New Interest</h5>
+            <button class="close" data-dismiss="modal">
+              <span><i class="fas fa-times mt-1"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>Interest</label>
+                    <input type="text" class="form-control" placeholder="interest">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-info btn-lg btn-block" data-dismiss="modal">
+              Add Interest
             </button>
           </div>
         </div>
