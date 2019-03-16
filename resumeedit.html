@@ -556,26 +556,26 @@
           <div class="col">
             <!-- SKILLS HEADER -->
             <div class="row mb-2">
-                <div class="col-12 border-bottom pb-2">
-                  <div class="col d-flex align-items-center">
-                    <button
-                      class="btn btn-info py-1"
-                      data-toggle="modal"
-                      data-target="#addSkillModal"
-                    >
-                      <i class="fas fa-plus"></i>
-                    </button>
-                    <span class="h4 text-info mx-4 mb-0">Skills</span>
-                    <h3 class="m-0 p-0 d-flex align-items-center">
-                      <span class="badge badge-info ml-0">2</span>
-                    </h3>
-                  </div>
+              <div class="col-12 border-bottom pb-2">
+                <div class="col d-flex align-items-center">
+                  <button
+                    class="btn btn-info py-1"
+                    data-toggle="modal"
+                    data-target="#addSkillModal"
+                  >
+                    <i class="fas fa-plus"></i>
+                  </button>
+                  <span class="h4 text-info mx-4 mb-0">Skills</span>
+                  <h3 class="m-0 p-0 d-flex align-items-center">
+                    <span class="badge badge-info ml-0">2</span>
+                  </h3>
                 </div>
               </div>
+            </div>
             <!-- SKILLS BODY -->
-            <div class="row mx-2 px-2 mx-md-0 px-md-0 mx-lg-2 px-lg-2">
+            <div class="row mx-3 mb-5 pt-3">
               <div class="col-12 col-md-6 col-lg-4">
-                <div class="row mx-1 mb-5 pt-3 border">
+                <div class="row pt-3 border">
                   <div class="col-12 d-flex mb-2">
                     <form>
                       <button class="btn btn-success mx-2">Save</button>
@@ -611,23 +611,38 @@
     <!-- EDIT ACCOMPLISHMENTS -->
     <section id="editResumeAccomplishments">
       <div class="container">
-        <div class="row mt-3">
+        <div class="row">
           <div class="col">
             <!-- ACCOMPLISHMENTS HEADER -->
-            <div class="row mb-3">
-              <div class="col-12 border-bottom">
-                <h4 class="text-info">Accomplishments</h4>
+            <div class="row mb-2">
+              <div class="col-12 border-bottom pb-2">
+                <div class="col d-flex align-items-center">
+                  <button
+                    class="btn btn-info py-1"
+                    data-toggle="modal"
+                    data-target="#addAccomplishmentModal"
+                  >
+                    <i class="fas fa-plus"></i>
+                  </button>
+                  <span class="h4 text-info mx-4 mb-0">Accomplishments</span>
+                  <h3 class="m-0 p-0 d-flex align-items-center">
+                    <span class="badge badge-info ml-0">2</span>
+                  </h3>
+                </div>
               </div>
             </div>
             <!-- ACCOMPLISHMENTS BODY -->
-            <div class="row">
+            <div class="row mx-3 mb-5 pt-3 border">
+              <div class="col-12 d-flex mb-2">
+                <form>
+                  <button class="btn btn-success mx-2">Save</button>
+                </form>
+                <form>
+                  <button class="btn btn-danger mx-2">Delete</button>
+                </form>
+              </div>
               <div class="col-12">
-                <p class="lead text-center border-bottom pb-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dignissimos eveniet sapiente omnis a dolores porro!
-                  Consectetur iste quisquam sapiente adipisci quas atque est! In
-                  eum sed nihil alias dicta eligendi?
-                </p>
+                <textarea type="text" rows='3' class="form-control mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusamus voluptatem unde temporibus minus quae natus tenetur laudantium obcaecati provident?</textarea>
               </div>
             </div>
           </div>
@@ -637,30 +652,28 @@
     <!-- EDIT LANGUAGES -->
     <section id="editResumeLanguages">
       <div class="container">
-        <div class="container">
-          <div class="row mt-3">
-            <div class="col">
-              <!-- LANGUAGES HEADER -->
-              <div class="row">
-                <div class="col-12 border-bottom">
-                  <h4 class="text-info">Languages</h4>
-                </div>
+        <div class="row mt-3">
+          <div class="col">
+            <!-- LANGUAGES HEADER -->
+            <div class="row">
+              <div class="col-12 border-bottom">
+                <h4 class="text-info">Languages</h4>
               </div>
-              <!-- LANGUAGES BODY -->
-              <div class="row mx-2 px-2 mx-md-0 px-md-0 mx-lg-2 px-lg-2">
-                <div class="col-12 col-md-6 col-lg-4">
-                  <div class="row">
-                    <div class="col-4 col-lg-6 col-xl-4">
-                      <p class="lead my-2"><b>English</b></p>
-                    </div>
-                    <div class="col-8 col-lg-6 col-xl-8 align-self-center">
-                      <p class="text-center text-muted my-0"><i>Fluent</i></p>
-                      <div class="progress" style="height: 4px">
-                        <div
-                          class="progress-bar bg-info"
-                          style="width:100%;"
-                        ></div>
-                      </div>
+            </div>
+            <!-- LANGUAGES BODY -->
+            <div class="row mx-2 px-2 mx-md-0 px-md-0 mx-lg-2 px-lg-2">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="row">
+                  <div class="col-4 col-lg-6 col-xl-4">
+                    <p class="lead my-2"><b>English</b></p>
+                  </div>
+                  <div class="col-8 col-lg-6 col-xl-8 align-self-center">
+                    <p class="text-center text-muted my-0"><i>Fluent</i></p>
+                    <div class="progress" style="height: 4px">
+                      <div
+                        class="progress-bar bg-info"
+                        style="width:100%;"
+                      ></div>
                     </div>
                   </div>
                 </div>
@@ -1025,7 +1038,36 @@
         </div>
       </div>
     </div>
-
+    <!-- ACCOMPLISHMENT MODAL -->
+    <div class="modal fade" id="addAccomplishmentModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title">Add New Accomplishment</h5>
+            <button class="close" data-dismiss="modal">
+              <span><i class="fas fa-times mt-1"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>Accomplishment</label>
+                    <textarea type="text" rows='3' class="form-control" placeholder="accomplishment"></textarea>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-info btn-lg btn-block" data-dismiss="modal">
+              Add Accomplishment
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- TO BE DELETED LATER -->
     <div class="my-5 py-5"></div>
