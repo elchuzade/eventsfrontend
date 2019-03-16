@@ -494,15 +494,6 @@
                   <input
                     type="text"
                     class="form-control"
-                    value="Mechatronics Engineering"
-                  />
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
                     value="Certified SolidWorks Professional - Advanced Surfacing"
                   />
                 </div>
@@ -663,7 +654,7 @@
                   <button
                     class="btn btn-info py-1"
                     data-toggle="modal"
-                    data-target="#addSkillModal"
+                    data-target="#addLanguageModal"
                   >
                     <i class="fas fa-plus"></i>
                   </button>
@@ -1158,7 +1149,7 @@
         </div>
       </div>
     </div>
-    <!-- SKILL MODAL -->
+    <!-- LANGUAGE MODAL -->
     <div class="modal fade" id="addLanguageModal">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -1174,7 +1165,7 @@
                 <div class="col-12 col-md-6">
                   <div class="form-group">
                     <label>Language</label>
-                    <input type="text" class="form-control" placeholder="skill" />
+                    <input type="text" class="form-control" placeholder="language" />
                   </div>
                 </div>
                 <div class="col-12 col-md-6">
@@ -1228,6 +1219,66 @@
           <div class="modal-footer">
             <button class="btn btn-info btn-lg btn-block" data-dismiss="modal">
               Add Interest
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- REFERENCE MODAL -->
+    <div class="modal fade" id="addReferenceModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title">Add New Reference</h5>
+            <button class="close" data-dismiss="modal">
+              <span><i class="fas fa-times mt-1"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" placeholder="name">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" class="form-control" placeholder="title">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label>Company</label>
+                    <input type="text" class="form-control" placeholder="company">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>Reference Bio</label>
+                    <textarea type="text" rows='3' class="form-control" placeholder="bio"></textarea>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" placeholder="email">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label>Phone</label>
+                    <input type="text" class="form-control" placeholder="phone">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-info btn-lg btn-block" data-dismiss="modal">
+              Add Reference
             </button>
           </div>
         </div>
