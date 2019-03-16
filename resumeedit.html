@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>HR Nations</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-info">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">HR Nations</a>
+        <form>
+          <button type="submit" class="btn btn-light text-dark border ml-3">
+            Save Changes
+          </button>
+        </form>
+        <button
+          class="navbar-toggler bg-info"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item px-2">
+              <a href="jobs.html" class="nav-link">Vacancies</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="events.html" class="nav-link">Events</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="blogs.html" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="contacts.html" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle active"
+                data-toggle="dropdown"
+                ><i class="fas fa-user"></i
+              ></a>
+              <div class="dropdown-menu">
+                <a href="profile.html" class="dropdown-item">Dashboard</a>
+                <a href="resume.html" class="dropdown-item">Resume</a>
+                <a href="applications.html" class="dropdown-item"
+                  >Applications</a
+                >
+                <a href="login.html" class="dropdown-item">Logout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- EDIT RESUME OVERLAY -->
+    <section id="editResumeOverlay">
+      <div class="container-fluid bg-light">
+        <div class="row align-items-center" style="height: 100px">
+          <div class="col text-center">
+            <h1 class="display-4">EDIT RESUME</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- EDIT RESUME DASHBOARD -->
+    <section id="editResumeDashboard" class="sticky-top">
+      <div class="container">
+        <div class="row bg-info mb-3 py-1">
+          <div class="col">
+            <span
+              class="float-left d-flex align-items-center"
+              style="height:100%"
+            >
+              <h4 class="text-white m-0"><i class="fas fa-cog mr-3"></i></h4>
+              <h4 class="d-none d-md-block text-white m-0">
+                EDIT RESUME DASHBOARD
+              </h4>
+            </span>
+            <span class="float-right">
+              <button
+                href="#"
+                type="submit"
+                form="editEventForm"
+                class="btn btn-light align-center py-1"
+              >
+                <i class="fas fa-save"></i>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- EDIT RESUME HEADER -->
+    <section id="editResumeHeader">
+      <div class="container border-bottom pb-5 mb-5">
+        <form>
+          <!-- HEADER INPUT -->
+          <div class="row mb-1">
+            <div class="col-12 col-lg-3">
+              <div class="form-group">
+                <div class="input-group">
+                  <select class="custom-select" id="categoryInput">
+                    <option selected>Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                  <div class="input-group-append">
+                    <label class="input-group-text" for="categoryInput"
+                      >Gender</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="text-center form-control"
+                  value="Kamran Elchuzade"
+                  disabled
+                />
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <div class="form-group">
+                <input type="date" class="form-control" />
+              </div>
+            </div>
+          </div>
+          <!-- MAIN INPUT AREAS -->
+          <div class="row mb-3">
+            <div class="col-12 col-lg-6">
+              <div class="form-group mb-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  value="Junior Web Developer"
+                />
+              </div>
+              <div class="form-group mb-2">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i
+                        class="fas fa-address-book"
+                        style="min-width: 25px"
+                      ></i>
+                    </span>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Maslak, Mashattan sitesi, Sariyer, Istanbul, Turkey"
+                  />
+                </div>
+              </div>
+              <div class="form-group mb-2">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fas fa-at" style="min-width: 25px"></i>
+                    </span>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="elchuzade@gmail.com"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="form-group mb-2">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fas fa-phone" style="min-width: 25px"></i>
+                    </span>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="+905385999823"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group mb-2">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fab fa-linkedin-in" style="min-width: 25px"></i>
+                    </span>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="www.linkedin.com/in/elchuzade"
+                  />
+                </div>
+              </div>
+              <div class="form-group mb-2">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fab fa-github" style="min-width: 25px"></i>
+                    </span>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="www.linkedin.com/in/elchuzade"
+                  />
+                </div>
+              </div>
+              <div class="form-group mb-2">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fab fa-twitter" style="min-width: 25px"></i>
+                    </span>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="www.linkedin.com/in/elchuzade"
+                  />
+                </div>
+              </div>
+              <div class="form-group mb-2">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fas fa-globe" style="min-width: 25px"></i>
+                    </span>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="www.linkedin.com/in/elchuzade"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- BIO -->
+          <div class="row mb-1">
+            <div class="col-12 form-group">
+              <textarea rows="3" class="form-control text-center">
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti aspernatur consequuntur odio quibusdam cum quia? Eligendi velit beatae provident quos ut inventore praesentium cupiditate nulla!
+              </textarea>
+            </div>
+          </div>
+          <!-- SUBMIT BUTTON -->
+          <div class="row">
+            <div class="col-12 text-center">
+              <button class="btn btn-info btn-lg w-50">Save Profile</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- EXPERIENCES -->
+    <section id="editResumeExperiences">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <!-- EXPERIENCES HEADER -->
+            <div class="row mb-2">
+              <div class="col-12 border-bottom pb-2">
+                <div class="col d-flex align-items-center">
+                  <button
+                    class=" btn btn-info py-1"
+                    data-toggle="modal"
+                    data-target="#addSpeakerModal"
+                  >
+                    <i class="fas fa-plus"></i>
+                  </button>
+                  <span class="h4 text-info mx-4 mb-0">Experiences</span>
+                  <h3 class="m-0 p-0 d-flex align-items-center">
+                    <span class="badge badge-info ml-0">4</span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- EXPERIENCES BODY -->
+            <div class="row mx-3 border-bottom">
+              <div class="col-12 d-flex mb-2">
+                <form>
+                  <button class="btn btn-success mx-2">Save</button>
+                </form>
+                <form>
+                  <button class="btn btn-danger mx-2">Delete</button>
+                </form>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Junior Web Developer"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="BNP Paribas"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Address"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="form-group">
+                  <input
+                    type="date"
+                    class="form-control"
+                    value="2010-01-01"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="form-group">
+                  <input
+                    type="date"
+                    class="form-control"
+                    value="2010-01-01"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="form-group">
+                  <div class="form-check pt-1" style='height: 100%'>
+                    <input class="form-check-input mr-2 mt-2" type="checkbox" value="experienceCurrent" id="experienceCurrent">
+                    <label class="form-check-label" for="experienceCurrent">
+                      <p class="lead">Current</p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <textarea rows="3" class="form-control text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolorum ullam, delectus ipsum, ratione quae odio accusamus, ipsa maxime sit asperiores veniam numquam illo ducimus doloremque sapiente quisquam minima dicta.</textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- EDUCATION -->
+    <section id="resumeEducation">
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col">
+            <!-- EDUCATION HEADER -->
+            <div class="row">
+              <div class="col-12 border-bottom">
+                <h4 class="text-info">Education</h4>
+              </div>
+            </div>
+            <!-- EDUCATION BODY -->
+            <div class="row mx-3">
+              <div class="col my-2">
+                <p class="lead my-0">
+                  <i><b>Mechatronics Engineering</b></i>
+                </p>
+                <p class="text-muted my-0">
+                  <i>Bachelor's Degree</i>
+                </p>
+                <p class="lead my-0">
+                  Bahcesehir University<span class="mx-4 text-muted">/</span
+                  ><span class="text-muted">Istanbul, Turkey</span>
+                </p>
+                <p>March 4, 2012 - June 21, 2016</p>
+                <p class="mx-3 border-bottom pb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                  tenetur alias similique ipsum pariatur quaerat, tempore ad
+                  quasi, consequatur minima suscipit unde, molestias libero
+                  voluptatum. Minus doloremque cum molestiae quasi?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CERTIFICATES -->
+    <section id="resumeCertificates">
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col">
+            <!-- CERTIFICATES HEADER -->
+            <div class="row">
+              <div class="col-12 border-bottom">
+                <h4 class="text-info">Certificates</h4>
+              </div>
+            </div>
+            <!-- CERTIFICATES BODY -->
+            <div class="row mx-3">
+              <div class="col my-2">
+                <p class="lead my-0">
+                  <i>
+                    <b>
+                      Certified SOLIDWORKS Professional Advanced Surfacing
+                    </b>
+                  </i>
+                </p>
+                <p class="lead text-muted my-0">Dassault Systemes</p>
+                <p>May 25, 2016</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SKILLS -->
+    <section id="resumeSkills">
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col">
+            <!-- SKILLS HEADER -->
+            <div class="row">
+              <div class="col-12 border-bottom">
+                <h4 class="text-info">Skills</h4>
+              </div>
+            </div>
+            <!-- SKILLS BODY -->
+            <div class="row mx-2 px-2 mx-md-0 px-md-0 mx-lg-2 px-lg-2">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="row">
+                  <div class="col-4 col-lg-6 col-xl-4">
+                    <p class="lead my-2"><b>HTML</b></p>
+                  </div>
+                  <div class="col-8 col-lg-6 col-xl-8 align-self-center">
+                    <p class="text-center text-muted my-0"><i>Advanced</i></p>
+                    <div class="progress" style="height: 4px">
+                      <div
+                        class="progress-bar bg-info"
+                        style="width:100%;"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ACCOMPLISHMENTS -->
+    <section id="resumeAccomplishments">
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col">
+            <!-- ACCOMPLISHMENTS HEADER -->
+            <div class="row mb-3">
+              <div class="col-12 border-bottom">
+                <h4 class="text-info">Accomplishments</h4>
+              </div>
+            </div>
+            <!-- ACCOMPLISHMENTS BODY -->
+            <div class="row">
+              <div class="col-12">
+                <p class="lead text-center border-bottom pb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dignissimos eveniet sapiente omnis a dolores porro!
+                  Consectetur iste quisquam sapiente adipisci quas atque est! In
+                  eum sed nihil alias dicta eligendi?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- LANGUAGES -->
+    <section id="resumeLanguages">
+      <div class="container">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col">
+              <!-- LANGUAGES HEADER -->
+              <div class="row">
+                <div class="col-12 border-bottom">
+                  <h4 class="text-info">Languages</h4>
+                </div>
+              </div>
+              <!-- LANGUAGES BODY -->
+              <div class="row mx-2 px-2 mx-md-0 px-md-0 mx-lg-2 px-lg-2">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="row">
+                    <div class="col-4 col-lg-6 col-xl-4">
+                      <p class="lead my-2"><b>English</b></p>
+                    </div>
+                    <div class="col-8 col-lg-6 col-xl-8 align-self-center">
+                      <p class="text-center text-muted my-0"><i>Fluent</i></p>
+                      <div class="progress" style="height: 4px">
+                        <div
+                          class="progress-bar bg-info"
+                          style="width:100%;"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- INTERESTS -->
+    <section id="resumeInterests">
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col">
+            <!-- INTERESTS HEADER -->
+            <div class="row">
+              <div class="col-12 border-bottom">
+                <h4 class="text-info">Interests</h4>
+              </div>
+            </div>
+            <!-- INTERESTS BODY -->
+            <div class="row mt-2">
+              <div class="col-12 col-md-6 col-lg-4">
+                <p class="lead text-center">Open Source</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- REFERENCES -->
+    <section id="resumeReferences">
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col">
+            <!-- REFERENCES HEADER -->
+            <div class="row">
+              <div class="col-12 border-bottom">
+                <h4 class="text-info">References</h4>
+              </div>
+            </div>
+            <!-- REFERENCES BODY -->
+            <div class="row mx-2 mt-3">
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">John Doe</h5>
+                    <h6 class="card-subtitle text-muted mb-1">
+                      Senior Software Developer
+                    </h6>
+                    <h6 class="text-muted mb-2"><i>Daimler AG</i></h6>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Excepturi, obcaecati?
+                    </p>
+                    <p>
+                      <span class="d-inline-block" style="min-width: 20px">
+                        <i class="fas fa-at"></i>
+                      </span>
+                      <span class="border-left pl-2">
+                        johndoe@gmail.com
+                      </span>
+                    </p>
+                    <p>
+                      <span class="d-inline-block" style="min-width: 20px">
+                        <i class="fas fa-phone"></i>
+                      </span>
+                      <span class="border-left pl-2">
+                        +905385999823
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TO BE DELETED LATER -->
+    <div class="my-5 py-5"></div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
