@@ -70,7 +70,7 @@
         </div>
       </div>
     </nav>
-    <!-- EDIT RESUME OVERLAY -->
+    <!-- EDIT OVERLAY -->
     <section id="editResumeOverlay">
       <div class="container-fluid bg-light">
         <div class="row align-items-center" style="height: 100px">
@@ -80,37 +80,9 @@
         </div>
       </div>
     </section>
-    <!-- EDIT RESUME DASHBOARD -->
-    <section id="editResumeDashboard" class="sticky-top">
-      <div class="container">
-        <div class="row bg-info mb-3 py-1">
-          <div class="col">
-            <span
-              class="float-left d-flex align-items-center"
-              style="height:100%"
-            >
-              <h4 class="text-white m-0"><i class="fas fa-cog mr-3"></i></h4>
-              <h4 class="d-none d-md-block text-white m-0">
-                EDIT RESUME DASHBOARD
-              </h4>
-            </span>
-            <span class="float-right">
-              <button
-                href="#"
-                type="submit"
-                form="editEventForm"
-                class="btn btn-light align-center py-1"
-              >
-                <i class="fas fa-save"></i>
-              </button>
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- EDIT RESUME HEADER -->
+    <!-- EDIT HEADER -->
     <section id="editResumeHeader">
-      <div class="container border-bottom pb-5 mb-5">
+      <div class="container border-bottom pb-5 mb-5 mt-3">
         <form>
           <!-- HEADER INPUT -->
           <div class="row mb-1">
@@ -279,7 +251,7 @@
         </form>
       </div>
     </section>
-    <!-- EXPERIENCES -->
+    <!-- EDIT EXPERIENCES -->
     <section id="editResumeExperiences">
       <div class="container">
         <div class="row">
@@ -303,7 +275,7 @@
               </div>
             </div>
             <!-- EXPERIENCES BODY -->
-            <div class="row mx-3 border-bottom mb-5">
+            <div class="row mx-3 mb-5 pt-3 border">
               <div class="col-12 d-flex mb-2">
                 <form>
                   <button class="btn btn-success mx-2">Save</button>
@@ -377,7 +349,7 @@
         </div>
       </div>
     </section>
-    <!-- EDUCATION -->
+    <!-- EDIT EDUCATION -->
     <section id="editResumeEducation">
       <div class="container">
         <div class="row">
@@ -395,13 +367,13 @@
                   </button>
                   <span class="h4 text-info mx-4 mb-0">Education</span>
                   <h3 class="m-0 p-0 d-flex align-items-center">
-                    <span class="badge badge-info ml-0">4</span>
+                    <span class="badge badge-info ml-0">1</span>
                   </h3>
                 </div>
               </div>
             </div>
             <!-- EDUCATION BODY -->
-            <div class="row mx-3 border-bottom mb-5">
+            <div class="row mx-3 mb-5 pt-3 border">
               <div class="col-12 d-flex mb-2">
                 <form>
                   <button class="btn btn-success mx-2">Save</button>
@@ -484,60 +456,149 @@
         </div>
       </div>
     </section>
-    <!-- CERTIFICATES -->
-    <section id="resumeCertificates">
+    <!-- EDIT CERTIFICATES -->
+    <section id="editResumeCertificates">
       <div class="container">
-        <div class="row mt-3">
+        <div class="row">
           <div class="col">
             <!-- CERTIFICATES HEADER -->
-            <div class="row">
-              <div class="col-12 border-bottom">
-                <h4 class="text-info">Certificates</h4>
+            <div class="row mb-2">
+              <div class="col-12 border-bottom pb-2">
+                <div class="col d-flex align-items-center">
+                  <button
+                    class=" btn btn-info py-1"
+                    data-toggle="modal"
+                    data-target="#addCertificateModal"
+                  >
+                    <i class="fas fa-plus"></i>
+                  </button>
+                  <span class="h4 text-info mx-4 mb-0">Certificates</span>
+                  <h3 class="m-0 p-0 d-flex align-items-center">
+                    <span class="badge badge-info ml-0">2</span>
+                  </h3>
+                </div>
               </div>
             </div>
             <!-- CERTIFICATES BODY -->
-            <div class="row mx-3">
-              <div class="col my-2">
-                <p class="lead my-0">
-                  <i>
-                    <b>
-                      Certified SOLIDWORKS Professional Advanced Surfacing
-                    </b>
-                  </i>
-                </p>
-                <p class="lead text-muted my-0">Dassault Systemes</p>
-                <p>May 25, 2016</p>
+            <div class="row mx-3 mb-5 pt-3 border">
+              <div class="col-12 d-flex mb-2">
+                <form>
+                  <button class="btn btn-success mx-2">Save</button>
+                </form>
+                <form>
+                  <button class="btn btn-danger mx-2">Delete</button>
+                </form>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Mechatronics Engineering"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Certified SolidWorks Professional - Advanced Surfacing"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Dassault Systemes"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="form-group">
+                  <input
+                    type="date"
+                    class="form-control"
+                    value="2010-01-01"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="form-group">
+                  <input
+                    type="date"
+                    class="form-control"
+                    value="2010-01-01"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="form-group mb-0">
+                  <div class="form-check pt-1">
+                    <input class="form-check-input mr-2 mt-2" type="checkbox" value="certificateNever" id="certificateNever">
+                    <label class="form-check-label" for="certificateNever">
+                      <p class="lead">Never</p>
+                    </label>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- SKILLS -->
-    <section id="resumeSkills">
+    <!-- EDIT SKILLS -->
+    <section id="editResumeSkills">
       <div class="container">
-        <div class="row mt-3">
+        <div class="row">
           <div class="col">
             <!-- SKILLS HEADER -->
-            <div class="row">
-              <div class="col-12 border-bottom">
-                <h4 class="text-info">Skills</h4>
+            <div class="row mb-2">
+                <div class="col-12 border-bottom pb-2">
+                  <div class="col d-flex align-items-center">
+                    <button
+                      class="btn btn-info py-1"
+                      data-toggle="modal"
+                      data-target="#addSkillModal"
+                    >
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <span class="h4 text-info mx-4 mb-0">Skills</span>
+                    <h3 class="m-0 p-0 d-flex align-items-center">
+                      <span class="badge badge-info ml-0">2</span>
+                    </h3>
+                  </div>
+                </div>
               </div>
-            </div>
             <!-- SKILLS BODY -->
             <div class="row mx-2 px-2 mx-md-0 px-md-0 mx-lg-2 px-lg-2">
               <div class="col-12 col-md-6 col-lg-4">
-                <div class="row">
-                  <div class="col-4 col-lg-6 col-xl-4">
-                    <p class="lead my-2"><b>HTML</b></p>
+                <div class="row mx-1 mb-5 pt-3 border">
+                  <div class="col-12 d-flex mb-2">
+                    <form>
+                      <button class="btn btn-success mx-2">Save</button>
+                    </form>
+                    <form>
+                      <button class="btn btn-danger mx-2">Delete</button>
+                    </form>
                   </div>
-                  <div class="col-8 col-lg-6 col-xl-8 align-self-center">
-                    <p class="text-center text-muted my-0"><i>Advanced</i></p>
-                    <div class="progress" style="height: 4px">
-                      <div
-                        class="progress-bar bg-info"
-                        style="width:100%;"
-                      ></div>
+                  <div class="col-12 col-md-6 pr-md-0">
+                    <div class="form-group">
+                      <input type="text" class="form-control" value="HTML" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 pl-md-0">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <select class="custom-select" id="categoryInput">
+                          <option value="beginner">Beginner</option>
+                          <option value="intermediate">Intermediate</option>
+                          <option value="professional" selected>Professional</option>
+                          <option value="advanced">Advanced</option>
+                        </select>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -547,8 +608,8 @@
         </div>
       </div>
     </section>
-    <!-- ACCOMPLISHMENTS -->
-    <section id="resumeAccomplishments">
+    <!-- EDIT ACCOMPLISHMENTS -->
+    <section id="editResumeAccomplishments">
       <div class="container">
         <div class="row mt-3">
           <div class="col">
@@ -573,8 +634,8 @@
         </div>
       </div>
     </section>
-    <!-- LANGUAGES -->
-    <section id="resumeLanguages">
+    <!-- EDIT LANGUAGES -->
+    <section id="editResumeLanguages">
       <div class="container">
         <div class="container">
           <div class="row mt-3">
@@ -609,8 +670,8 @@
         </div>
       </div>
     </section>
-    <!-- INTERESTS -->
-    <section id="resumeInterests">
+    <!-- EDIT INTERESTS -->
+    <section id="editResumeInterests">
       <div class="container">
         <div class="row mt-3">
           <div class="col">
@@ -630,8 +691,8 @@
         </div>
       </div>
     </section>
-    <!-- REFERENCES -->
-    <section id="resumeReferences">
+    <!-- EDIT REFERENCES -->
+    <section id="editResumeReferences">
       <div class="container">
         <div class="row mt-3">
           <div class="col">
@@ -764,7 +825,6 @@
         </div>
       </div>
     </div>
-
     <!-- EDUCATION MODAL -->
     <div class="modal fade" id="addEducationModal">
       <div class="modal-dialog modal-lg">
@@ -855,6 +915,117 @@
         </div>
       </div>
     </div>
+    <!-- CERTIFICATE MODAL -->
+    <div class="modal fade" id="addCertificateModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title">Add New Certificate</h5>
+            <button class="close" data-dismiss="modal">
+              <span><i class="fas fa-times mt-1"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="form-group">
+                    <label>Certificate Name</label>
+                    <input type="text" class="form-control" placeholder="certificate name" />
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="form-group">
+                    <label>Issuing Organization</label>
+                    <input type="text" class="form-control" placeholder="issuing organization" />
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="form-group">
+                    <label>From Date</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      value="2010-01-01"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="form-group">
+                    <label>To Date</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      value="2010-01-01"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="form-group">
+                    <label>Does Not Expire</label>
+                    <div class="form-check pt-1">
+                      <input class="form-check-input mr-2 mt-2" type="checkbox" value="experienceCurrent" id="experienceCurrent">
+                      <label class="form-check-label" for="experienceCurrent">
+                        <p class="lead text-muted">Never</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-info btn-lg btn-block" data-dismiss="modal">
+              Add Certificate
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SKILL MODAL -->
+    <div class="modal fade" id="addSkillModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title">Add New Skill</h5>
+            <button class="close" data-dismiss="modal">
+              <span><i class="fas fa-times mt-1"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label>Skill</label>
+                    <input type="text" class="form-control" placeholder="skill" />
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label>Level</label>
+                    <div class="input-group">
+                      <select class="custom-select" id="categoryInput">
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="professional">Professional</option>
+                        <option value="advanced">Advanced</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-info btn-lg btn-block" data-dismiss="modal">
+              Add Skill
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- TO BE DELETED LATER -->
     <div class="my-5 py-5"></div>
