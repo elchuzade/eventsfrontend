@@ -303,7 +303,7 @@
               </div>
             </div>
             <!-- EXPERIENCES BODY -->
-            <div class="row mx-3 border-bottom">
+            <div class="row mx-3 border-bottom mb-5">
               <div class="col-12 d-flex mb-2">
                 <form>
                   <button class="btn btn-success mx-2">Save</button>
@@ -378,36 +378,106 @@
       </div>
     </section>
     <!-- EDUCATION -->
-    <section id="resumeEducation">
+    <section id="editResumeEducation">
       <div class="container">
-        <div class="row mt-3">
+        <div class="row">
           <div class="col">
-            <!-- EDUCATION HEADER -->
-            <div class="row">
-              <div class="col-12 border-bottom">
-                <h4 class="text-info">Education</h4>
+            <!-- EXPERIENCES HEADER -->
+            <div class="row mb-2">
+              <div class="col-12 border-bottom pb-2">
+                <div class="col d-flex align-items-center">
+                  <button
+                    class=" btn btn-info py-1"
+                    data-toggle="modal"
+                    data-target="#addEducationModal"
+                  >
+                    <i class="fas fa-plus"></i>
+                  </button>
+                  <span class="h4 text-info mx-4 mb-0">Education</span>
+                  <h3 class="m-0 p-0 d-flex align-items-center">
+                    <span class="badge badge-info ml-0">4</span>
+                  </h3>
+                </div>
               </div>
             </div>
             <!-- EDUCATION BODY -->
-            <div class="row mx-3">
-              <div class="col my-2">
-                <p class="lead my-0">
-                  <i><b>Mechatronics Engineering</b></i>
-                </p>
-                <p class="text-muted my-0">
-                  <i>Bachelor's Degree</i>
-                </p>
-                <p class="lead my-0">
-                  Bahcesehir University<span class="mx-4 text-muted">/</span
-                  ><span class="text-muted">Istanbul, Turkey</span>
-                </p>
-                <p>March 4, 2012 - June 21, 2016</p>
-                <p class="mx-3 border-bottom pb-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                  tenetur alias similique ipsum pariatur quaerat, tempore ad
-                  quasi, consequatur minima suscipit unde, molestias libero
-                  voluptatum. Minus doloremque cum molestiae quasi?
-                </p>
+            <div class="row mx-3 border-bottom mb-5">
+              <div class="col-12 d-flex mb-2">
+                <form>
+                  <button class="btn btn-success mx-2">Save</button>
+                </form>
+                <form>
+                  <button class="btn btn-danger mx-2">Delete</button>
+                </form>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Mechatronics Engineering"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Bachelor's Degree"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Bahcesehir University"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Besiktas, Istanbul, Turkey"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="form-group">
+                  <input
+                    type="date"
+                    class="form-control"
+                    value="2010-01-01"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="form-group">
+                  <input
+                    type="date"
+                    class="form-control"
+                    value="2010-01-01"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="form-group mb-0">
+                  <div class="form-check pt-1">
+                    <input class="form-check-input mr-2 mt-2" type="checkbox" value="educationCurrent" id="educationCurrent">
+                    <label class="form-check-label" for="educationCurrent">
+                      <p class="lead">Current</p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <textarea rows="3" class="form-control text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolorum ullam, delectus ipsum, ratione quae odio accusamus, ipsa maxime sit asperiores veniam numquam illo ducimus doloremque sapiente quisquam minima dicta.</textarea>
+                </div>
               </div>
             </div>
           </div>
@@ -663,7 +733,7 @@
                 </div>
                 <div class="col-12 col-md-4">
                   <div class="form-group">
-                    <label>Current Work</label>
+                    <label>Currently Working</label>
                     <div class="form-check pt-1">
                       <input class="form-check-input mr-2 mt-2" type="checkbox" value="experienceCurrent" id="experienceCurrent">
                       <label class="form-check-label" for="experienceCurrent">
@@ -688,13 +758,103 @@
           </div>
           <div class="modal-footer">
             <button class="btn btn-info btn-lg btn-block" data-dismiss="modal">
-              Add Event
+              Add Experience
             </button>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- EDUCATION MODAL -->
+    <div class="modal fade" id="addEducationModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title">Add New Education</h5>
+            <button class="close" data-dismiss="modal">
+              <span><i class="fas fa-times mt-1"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>Specialty</label>
+                    <input type="text" class="form-control" placeholder="specialty" />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>Degree</label>
+                    <input type="text" class="form-control" placeholder="degree" />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>University</label>
+                    <input type="text" class="form-control" placeholder="university" />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>Location</label>
+                    <input type="text" class="form-control" placeholder="location" />
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="form-group">
+                    <label>From Date</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      value="2010-01-01"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="form-group">
+                    <label>To Date</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      value="2010-01-01"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="form-group">
+                    <label>Currently Studying</label>
+                    <div class="form-check pt-1">
+                      <input class="form-check-input mr-2 mt-2" type="checkbox" value="experienceCurrent" id="experienceCurrent">
+                      <label class="form-check-label" for="experienceCurrent">
+                        <p class="lead text-muted">Current</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>Study Description</label>
+                    <textarea
+                      rows="3"
+                      type="text"
+                      class="form-control"
+                      placeholder="study description"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-info btn-lg btn-block" data-dismiss="modal">
+              Add Education
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- TO BE DELETED LATER -->
     <div class="my-5 py-5"></div>
