@@ -291,7 +291,7 @@
                   <button
                     class=" btn btn-info py-1"
                     data-toggle="modal"
-                    data-target="#addSpeakerModal"
+                    data-target="#addExperienceModal"
                   >
                     <i class="fas fa-plus"></i>
                   </button>
@@ -358,8 +358,8 @@
                 </div>
               </div>
               <div class="col-12 col-md-4">
-                <div class="form-group">
-                  <div class="form-check pt-1" style='height: 100%'>
+                <div class="form-group mb-0">
+                  <div class="form-check pt-1">
                     <input class="form-check-input mr-2 mt-2" type="checkbox" value="experienceCurrent" id="experienceCurrent">
                     <label class="form-check-label" for="experienceCurrent">
                       <p class="lead">Current</p>
@@ -609,6 +609,93 @@
         </div>
       </div>
     </section>
+
+    <!-- EXPERIENCE MODAL -->
+    <div class="modal fade" id="addExperienceModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title">Add New Experience</h5>
+            <button class="close" data-dismiss="modal">
+              <span><i class="fas fa-times mt-1"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" class="form-control" placeholder="title" />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>Company Name</label>
+                    <input type="text" class="form-control" placeholder="company name" />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>Location</label>
+                    <input type="text" class="form-control" placeholder="location" />
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="form-group">
+                    <label>From Date</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      value="2010-01-01"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="form-group">
+                    <label>To Date</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      value="2010-01-01"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="form-group">
+                    <label>Current Work</label>
+                    <div class="form-check pt-1">
+                      <input class="form-check-input mr-2 mt-2" type="checkbox" value="experienceCurrent" id="experienceCurrent">
+                      <label class="form-check-label" for="experienceCurrent">
+                        <p class="lead text-muted">Current</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>Job Description</label>
+                    <textarea
+                      rows="3"
+                      type="text"
+                      class="form-control"
+                      placeholder="job description"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-info btn-lg btn-block" data-dismiss="modal">
+              Add Event
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <!-- TO BE DELETED LATER -->
     <div class="my-5 py-5"></div>
     <script
